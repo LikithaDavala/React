@@ -68,3 +68,14 @@ This is the name of your React project.
 npm start ( it is an command to start the application)
 
 starts the React development server.
+
+react terminal commands:
+1.npx create-react-app projectname or appname
+yes
+2.npm install (incase if itis needed)
+3.npm start
+or 
+cd projectname or appname
+npm start
+yes
+
