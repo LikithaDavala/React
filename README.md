@@ -79,3 +79,26 @@ cd projectname or appname
 npm start
 yes
 
+What is BrowserRouter?
+BrowserRouter is a component from React Router that allows your React application to have different URLs/pages and navigate between them without reloading the entire webpage.
+import { BrowserRouter } from "react-router-dom";
+<BrowserRouter></BrowserRouter>
+
+what is Routes?
+Routes is a component from React Router that acts like a container for all your Route definitions.
+import { Routes, Route } from "react-router-dom";
+<Routes></Routes>
+
+what is Route?
+A Route defines which component should be displayed for a particular URL.
+Route connects a URL (path) with a React component (element).
+
+What ia import?
+import is a JavaScript keyword used to bring code from another file or package into your current file.
+import Header from "./Header";
+
+What is export?
+export is a JavaScript keyword used to make code from one file available to other files.
+export default Header;
+
+
