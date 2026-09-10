@@ -1,6 +1,24 @@
+import { useState } from "react";
+
 function Loginpage(){
+const [phone ,input]=useState("");
+
+
     return(
-        <div>login page</div>
+        <div>
+
+            <input
+            value={phone}
+            onChange={(e)=>input(e.target.value)}
+            />
+
+            <input
+            value={phone}
+            />
+        </div>
+        
+        
+
     )
 };
 
