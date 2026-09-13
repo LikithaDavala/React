@@ -23,9 +23,6 @@ const users = [
             <p>login page </p>
             <Details users={users}/>
         </div>
-        
-        
-
     )
 };
 
