@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Details from "../component/details";
+import Details from "../component/details"; 
 
 function Register() {
   const [name, inputName] = useState("");
