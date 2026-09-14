@@ -105,4 +105,12 @@ What are Hooks in React?
 
 Hooks are special functions in React that allow function components to use React features such as state and lifecycle-related behavior.
 
+What is fetch() in JavaScript?
+
+fetch() is a built-in JavaScript function used to request data from a server or API.
+
+In simple words:
+
+Fetch means: “Go to this URL, get the data, and bring it back.”
+
 
