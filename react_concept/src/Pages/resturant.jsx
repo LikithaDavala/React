@@ -21,7 +21,7 @@ function Resturant() {
     return (
         <div>
             <div>
-                <label>Project Name:</label>
+                <label>Number of Counts:</label>
                 <input
                     value={projectValue}
                     onChange={(e) => projectInput(e.target.value)}
