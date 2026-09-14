@@ -5,10 +5,10 @@ function Resturants({ productlist }) {
             {productlist.map((prod) => {
                 return (
                     <div key={prod.id}>
-                        <label>Item Name:</label>
-                        {prod.itemname}
-                        <label>item category:</label>
-                        {prod.itemcategory}
+                        <label>Number of Counts:</label>
+                        {prod.count}
+                        <label>needs Refetch:</label>
+                        {prod.needsRefetch}
                         <br />
                     </div>
                 )
