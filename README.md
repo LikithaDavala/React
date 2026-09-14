@@ -101,4 +101,8 @@ What is export?
 export is a JavaScript keyword used to make code from one file available to other files.
 export default Header;
 
+What are Hooks in React?
+
+Hooks are special functions in React that allow function components to use React features such as state and lifecycle-related behavior.
+
 
