@@ -113,4 +113,8 @@ In simple words:
 
 Fetch means: “Go to this URL, get the data, and bring it back.”
 
+What is .then() in JavaScript?
 
+.then() is used with a Promise to run code after the Promise is successfully completed.
+
+Since fetch() returns a Promise, we commonly use .then() with fetch().
