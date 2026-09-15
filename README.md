@@ -122,3 +122,28 @@ Since fetch() returns a Promise, we commonly use .then() with fetch().
 map() in React
 
 map() is not a React function. It is a JavaScript array method that we commonly use in React to display multiple items from an array.
+
+What is an API?
+
+API = Application Programming Interface
+
+In simple words:
+
+API is a way for two applications to communicate with each other and exchange data.
+
+🍔 Simple real-life example
+
+Imagine a restaurant:
+
+You → Waiter → Kitchen
+You = React application
+Waiter = API
+Kitchen = Backend/Server
+Food = Data
+
+You don't directly go into the kitchen. You ask the waiter (API) for food, and the waiter brings the result.
+
+Similarly:
+
+React → API → Backend/Database
+React ← API ← Data
