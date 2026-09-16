@@ -3,16 +3,15 @@ import productAPI from "../api/product";
 import Products  from "../component/product";
 
 function Resturant() {
-    const [countValue, ccountInput] = useState("");
+    const [countValue, countInput] = useState("");
     const [refetcheValue, refetcheInput] = useState("");
-    const [productlist, setproductlist] = useState([]);
+    
 
     productAPI().then((response) => {
         return response.json();
     }).then((data) => {
         projectInput(data.project);
         collectionInput(data.collection)
-        setproductlist(data.products);
     }).catch((error) => {
         console.error(error)
     })
@@ -24,7 +23,15 @@ function Resturant() {
                 <label>Number of Counts:</label>
                 <input
                     value={countValue}
-                    onChange={(e) => countValue(e.target.value)}
+                    onChange={(e) => countInput(e.target.value)}
+                />
+            </div>           
+
+                  <div>
+                <label>Need Refetche:</label>
+                <input
+                    value={refetcheValue}
+                    onChange={(e) => refetcheInput(e.target.value)}
                 />
             </div>
 
@@ -34,7 +41,7 @@ function Resturant() {
                 {countValue}
                 <br />
                 <label>needs Refetche:</label>
-                {refetcheInput}
+                {refetcheValue}
             </div>
 
          <Products productlist={productlist}/>
