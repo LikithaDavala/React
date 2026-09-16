@@ -1,10 +1,10 @@
-function Resturants({ productlist }) {
+function Resturants({ version }) {
     return (
 
         <div>
-            {productlist.map((prod) => {
+            {version.map((ver) => {
                 return (
-                    <div key={prod.id}>
+                    <div key={ver.id}>
                         <label>Number of Counts:</label>
                         {prod.count}
                         <label>needs Refetch:</label>
