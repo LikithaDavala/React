@@ -119,7 +119,7 @@ What is .then() in JavaScript?
 
 Since fetch() returns a Promise, we commonly use .then() with fetch().
 
-map() in React
+What is map() in React
 
 map() is not a React function. It is a JavaScript array method that we commonly use in React to display multiple items from an array.
 
