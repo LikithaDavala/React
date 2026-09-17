@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Details from "../component/details"; 
+
 
 function Register() {
   const [name, inputName] = useState("");
@@ -14,10 +14,6 @@ function Register() {
   }
 
 
-   const users = [
-        { name: "kavya", phoneNumber: "123-456-7890", email: "kavya@gmail.com" },
-        { name: "sujana", phoneNumber: "987-654-3210", email: "sujana@gmail.com" }
-    ];
 
   return (
 
