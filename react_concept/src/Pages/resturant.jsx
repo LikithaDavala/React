@@ -1,17 +1,19 @@
 import { useState } from "react";
-import productAPI from "../api/product";
-import Products  from "../component/product";
+import ResturantAPI from "../api/resturant";
+import Resturants from "../component/resturant";
 
 function Resturant() {
-    const [countValue, countInput] = useState("");
-    const [refetcheValue, refetcheInput] = useState("");
-    
+    // const [countValue, countInput] = useState("");
+    // const [collectionValue, collectionInput] = useState("");
+    const [dataValue , dataInput] = useState("");
 
-    productAPI().then((response) => {
+    ResturantAPI().then((response) => {
+        console.log("1", response)
         return response.json();
     }).then((data) => {
-        projectInput(data.project);
-        collectionInput(data.collection)
+        // countInput(data.count);
+        // collectionInput(data.collection)
+        dataInput(data)
     }).catch((error) => {
         console.error(error)
     })
@@ -19,7 +21,7 @@ function Resturant() {
 
     return (
         <div>
-            <div>
+            {/* <div>
                 <label>Number of Counts:</label>
                 <input
                     value={countValue}
@@ -28,10 +30,10 @@ function Resturant() {
             </div>           
 
                   <div>
-                <label>Need Refetche:</label>
+                <label>No of Collections:</label>
                 <input
-                    value={refetcheValue}
-                    onChange={(e) => refetcheInput(e.target.value)}
+                    value={collectionValue}
+                    onChange={(e) => collectionInput(e.target.value)}
                 />
             </div>
 
@@ -41,11 +43,17 @@ function Resturant() {
                 {countValue}
                 <br />
                 <label>needs Refetche:</label>
-                {refetcheValue}
+                {collectionValue}
+            </div> */}
+            <div>
+                <label>All Data:</label>
+                {dataValue.count}
+                {dataValue.collection}
+                {dataValue.project}
             </div>
-
-         <Products productlist={productlist}/>
+            <Resturants resturant={dataValue.restaurants} />
         </div>
+    
     )
 }
 export default Resturant;
