@@ -1,14 +1,14 @@
-function Resturants({ version }) {
+function Resturants({resturant}) {
     return (
-
         <div>
-            {version.map((ver) => {
+            {resturant?.map((ver) => {
                 return (
-                    <div key={ver.id}>
+                    <div key={ver._id}>
                         <label>Number of Counts:</label>
-                        {prod.count}
-                        <label>needs Refetch:</label>
-                        {prod.needsRefetch}
+                        {ver.restaurantcode}
+                        <br />
+                        <label>No of Collections:</label>
+                        {ver.restaurantname}
                         <br />
                     </div>
                 )
