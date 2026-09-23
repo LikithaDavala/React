@@ -21,12 +21,11 @@ function Resturant() {
 
     return (
         <div>
-            {/* <div>
+            <div>
                 <label>Number of Counts:</label>
                 <input
                     value={countValue}
-                    onChange={(e) => countInput(e.target.value)}
-                />
+                    onChange={(e) => countInput(e.target.value)}/>
             </div>           
 
                   <div>
@@ -44,7 +43,7 @@ function Resturant() {
                 <br />
                 <label>needs Refetche:</label>
                 {collectionValue}
-            </div> */}
+            </div>
             <div>
                 <label>All Data:</label>
                 {dataValue.count}
