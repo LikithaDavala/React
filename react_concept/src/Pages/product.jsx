@@ -17,18 +17,15 @@ function Product() {
         console.error(error)
     })
 
-
     return (
         <div>
             <div>
                 <label>Project Name:</label>
                 <input
                     value={projectValue}
-                    onChange={(e) => projectInput(e.target.value)}
-                />
+                    onChange={(e) => projectInput(e.target.value)}/>
             </div>
-
-
+            
             <div>
                 <label>Project Name:</label>
                 {projectValue}
