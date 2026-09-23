@@ -12,9 +12,6 @@ function Register() {
     console.log(phoneNumber);
     console.log(email);
   }
-
-
-
   return (
 
     <div>
