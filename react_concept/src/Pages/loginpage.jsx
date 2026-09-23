@@ -14,12 +14,10 @@ const users = [
 
             <input
             value={phone}
-            onChange={(e)=>input(e.target.value)}
-            />
+            onChange={(e)=>input(e.target.value)}/>
 
             <input
-            value={phone}
-            />
+            value={phone}/>
             <p>login page </p>
             <Details users={users}/>
         </div>
