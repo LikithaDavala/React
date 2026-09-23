@@ -14,9 +14,6 @@ function Users() {
          <p>Welcome to the Users page!</p>
          <Details users={users} />
           <h3>Users Component</h3>
-     
-     
-        
     </div>
   );
 }
