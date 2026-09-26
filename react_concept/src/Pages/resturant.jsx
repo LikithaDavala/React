@@ -3,8 +3,8 @@ import ResturantAPI from "../api/resturant";
 import Resturants from "../component/resturant";
 
 function Resturant() {
-    // const [countValue, countInput] = useState("");
-    // const [collectionValue, collectionInput] = useState("");
+    const [countValue, countInput] = useState("");
+    const [collectionValue, collectionInput] = useState("");
     const [dataValue , dataInput] = useState("");
 
     ResturantAPI().then((response) => {

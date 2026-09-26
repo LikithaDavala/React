@@ -1,0 +1,310 @@
+.students-page {
+  min-height: 100vh;
+  padding: 56px 24px 72px;
+  background-color: #f3f6f2;
+  background-image: linear-gradient(rgba(32, 63, 53, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 63, 53, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: #182720;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.students-shell {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #cad5cc;
+}
+
+.students-kicker {
+  margin: 0 0 12px;
+  color: #527364;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.students-header h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.students-subtitle {
+  margin: 9px 0 0;
+  color: #64736b;
+  font-size: 0.95rem;
+}
+
+.student-count {
+  padding: 9px 12px;
+  border: 1px solid #b8c9bd;
+  color: #52665b;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.student-count span {
+  margin-right: 4px;
+  color: #235a46;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.student-form-section,
+.student-list-section {
+  padding: 30px 0;
+  border-bottom: 1px solid #cad5cc;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.section-index {
+  color: #8b9b91;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.95rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.student-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.student-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  flex: 1;
+  gap: 16px;
+}
+
+.student-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+  color: #46584d;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.student-field input {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #c6d1c9;
+  border-radius: 3px;
+  outline: none;
+  background: #fff;
+  color: #182720;
+  font: inherit;
+  font-weight: 400;
+}
+
+.student-field input:focus {
+  border-color: #31745a;
+  box-shadow: 0 0 0 3px rgba(49, 116, 90, 0.12);
+}
+
+.student-field input::placeholder {
+  color: #9aa69e;
+}
+
+.student-form-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.student-button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.student-button:disabled,
+.student-refresh:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.student-button-primary {
+  background: #246448;
+  color: #fff;
+}
+
+.student-button-primary:hover:not(:disabled) {
+  background: #194e37;
+}
+
+.student-button-secondary {
+  border-color: #c6d1c9;
+  background: #fff;
+  color: #46584d;
+}
+
+.student-message {
+  margin: 14px 0 0;
+  font-size: 0.88rem;
+}
+
+.student-message-error {
+  color: #a33a31;
+}
+
+.student-message-success {
+  color: #246448;
+}
+
+.student-list-heading {
+  margin-bottom: 16px;
+}
+
+.student-refresh {
+  margin-left: auto;
+  padding: 6px 0 6px 10px;
+  border: 0;
+  background: transparent;
+  color: #246448;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.student-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #cad5cc;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.student-table th {
+  padding: 13px 16px;
+  background: #e7eee8;
+  color: #52665b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.student-table td {
+  padding: 15px 16px;
+  border-top: 1px solid #e2e8e3;
+  color: #46584d;
+  font-size: 0.88rem;
+}
+
+.student-table tbody tr:hover {
+  background: #f8faf8;
+}
+
+.student-table .student-name-cell {
+  color: #182720;
+  font-weight: 700;
+}
+
+.student-actions-heading {
+  width: 150px;
+  text-align: right;
+}
+
+.student-row-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.student-row-actions button {
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.student-action-edit {
+  color: #246448;
+}
+
+.student-action-delete {
+  color: #a3453b;
+}
+
+.student-empty {
+  height: 94px;
+  color: #738178 !important;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .students-page {
+    padding: 36px 18px 52px;
+  }
+
+  .student-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .student-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .student-form-actions {
+    justify-content: flex-end;
+  }
+
+  .student-table {
+    min-width: 640px;
+  }
+}
+
+@media (max-width: 480px) {
+  .students-page {
+    padding: 28px 14px 40px;
+  }
+
+  .students-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .students-header h1 {
+    font-size: 2.35rem;
+  }
+}
